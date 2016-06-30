@@ -73,11 +73,21 @@ class Widget extends \Hofff\Contao\Selectri\Widget
         return ob_get_clean();
     }
 
+    /**
+     * Unfold isn´t in use.
+     * 
+     * @return null
+     */
     public function getUnfolded()
     {
         return null;
     }
 
+    /**
+     * Unfold isn´t in use.
+     * 
+     * @param array $unfolded
+     */
     public function setUnfolded(array $unfolded)
     {
         // this widget don´t use the session
