@@ -89,7 +89,7 @@ class Widget extends \Hofff\Contao\Selectri\Widget
      * Unfold isn´t in use.
      *
      * @param array $unfolded
-     * 
+     *
      * @SuppressWarnings(PHPMD.UnusedFormalParameter)
      */
     public function setUnfolded(array $unfolded)

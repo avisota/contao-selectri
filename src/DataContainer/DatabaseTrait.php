@@ -48,5 +48,4 @@ trait DatabaseTrait
     {
         $this->database = $database;
     }
-
 }

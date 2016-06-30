@@ -28,7 +28,7 @@ class SQLAdjacencyTreeDataConfigWithItems extends SQLAdjacencyTreeDataConfig
 
     /**
      * Get the item callback.
-     * 
+     *
      * @return mixed
      */
     public function getItemCallback()
@@ -38,7 +38,7 @@ class SQLAdjacencyTreeDataConfigWithItems extends SQLAdjacencyTreeDataConfig
 
     /**
      * Set the item callback.
-     * 
+     *
      * @param mixed $itemCallback
      */
     public function setItemCallback($itemCallback)

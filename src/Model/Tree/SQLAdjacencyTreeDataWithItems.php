@@ -27,19 +27,20 @@ class SQLAdjacencyTreeDataWithItems extends SQLAdjacencyTreeData
 {
     /**
      * Create the widget node.
-     * 
+     *
      * @param Tree   $tree
      * @param string $key
      *
      * @return SQLAdjacencyTreeNodeWithItems
      */
-    protected function createNode(Tree $tree, $key) {
+    protected function createNode(Tree $tree, $key)
+    {
         return new SQLAdjacencyTreeNodeWithItems($this, $tree, $key);
     }
 
     /**
      * Fetch tree nodes.
-     * 
+     *
      * @param array|null $keys
      * @param bool       $children
      * @param bool       $order
