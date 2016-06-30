@@ -65,6 +65,8 @@ class Widget extends \Hofff\Contao\Selectri\Widget
      * @param $level
      *
      * @return string
+     *
+     * @SuppressWarnings(PHPMD.UnusedFormalParameter)
      */
     protected function renderChildren($level)
     {
@@ -75,7 +77,7 @@ class Widget extends \Hofff\Contao\Selectri\Widget
 
     /**
      * Unfold isn´t in use.
-     * 
+     *
      * @return null
      */
     public function getUnfolded()
@@ -85,8 +87,10 @@ class Widget extends \Hofff\Contao\Selectri\Widget
 
     /**
      * Unfold isn´t in use.
-     * 
+     *
      * @param array $unfolded
+     * 
+     * @SuppressWarnings(PHPMD.UnusedFormalParameter)
      */
     public function setUnfolded(array $unfolded)
     {
