@@ -47,7 +47,7 @@ class Widget extends \Hofff\Contao\Selectri\Widget
      */
     public function getUnfolded()
     {
-        return null;
+        return array();
     }
 
     /**
@@ -60,5 +60,6 @@ class Widget extends \Hofff\Contao\Selectri\Widget
     public function setUnfolded(array $unfolded)
     {
         // this widget don´t use the session
+        return null;
     }
 }
