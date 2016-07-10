@@ -25,41 +25,6 @@ use Hofff\Contao\Selectri\Exception\SelectriException;
 class Widget extends \Hofff\Contao\Selectri\Widget
 {
     /**
-     * Generate the widget.
-     *
-     * @return string|void
-     *
-     * @throws \Hofff\Contao\Selectri\Exception\SelectriException
-     */
-    public function generate()
-    {
-        $data = $this->getData();
-        if (!$data) {
-            throw new SelectriException('no selectri data configuration set');
-        }
-        $data->validate();
-
-        if (\Input::get('striID') == $this->strId) {
-            $action = \Input::get('striAction');
-            return $action ? $this->generateAjax($action) : '';
-        }
-
-        $GLOBALS['TL_JAVASCRIPT']['avisota-selectri.js'] = 'assets/avisota/selectri/js/selectri.js';
-        $GLOBALS['TL_CSS']['selectri.css']               = 'system/modules/hofff_selectri/assets/css/selectri.css';
-
-        $options = array(
-            'name' => $this->getInputName(),
-            'min'  => $this->getMinSelected(),
-            'max'  => $this->getMaxSelected()
-        );
-        $options = array_merge($options, $this->getJSOptions());
-
-        ob_start();
-        include $this->getTemplate('avisota_selectri_container');
-        return ob_get_clean();
-    }
-
-    /**
      * Render children items.
      *
      * @param $level
@@ -82,7 +47,7 @@ class Widget extends \Hofff\Contao\Selectri\Widget
      */
     public function getUnfolded()
     {
-        return null;
+        return array();
     }
 
     /**
@@ -95,5 +60,6 @@ class Widget extends \Hofff\Contao\Selectri\Widget
     public function setUnfolded(array $unfolded)
     {
         // this widget don´t use the session
+        return null;
     }
 }
