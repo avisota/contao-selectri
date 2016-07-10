@@ -4,7 +4,7 @@
             echo 'striHasChildren';
         } ?>">
 
-            <div class="striNode" data-stri-key<?php if ($node->isSelectable()): ?>-select-able<?php endif; ?>="<?php echo specialchars($node->getKey()); ?>">
+            <div class="striNode" data-stri-key="<?php echo specialchars($node->getKey()); ?>">
                 <?php if ($node->isSelectable()): ?>
                     <input type="hidden" value="<?php echo specialchars($node->getKey()); ?>"/>
                 <?php endif; ?>
