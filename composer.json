@@ -56,8 +56,7 @@
     "extra": {
         "contao": {
             "sources": {
-                "contao": "system/modules/avisota-selectri",
-                "assets": "assets/avisota/selectri"
+                "contao": "system/modules/avisota-selectri"
             }
         },
         "branch-alias": {
