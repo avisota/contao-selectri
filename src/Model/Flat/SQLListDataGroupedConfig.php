@@ -25,7 +25,7 @@ use Hofff\Contao\Selectri\Model\Flat\SQLListDataConfig;
 class SQLListDataGroupedConfig extends SQLListDataConfig
 {
     private $itemsCallback = null;
-    
+
     private $groupByParameter = null;
 
     /**
