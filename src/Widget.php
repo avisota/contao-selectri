@@ -15,8 +15,6 @@
 
 namespace Avisota\Contao\Selectri;
 
-use Hofff\Contao\Selectri\Exception\SelectriException;
-
 /**
  * Class Widget
  *
